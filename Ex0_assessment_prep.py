@@ -190,7 +190,9 @@ while choice!=1 and choice !=2 and choice !=3:
     elif choice == 2:
         if len(tasks) == 0:
             print("No tasks recorded yet")
-        
+    elif choice == 3:
+           print("Thank you for using the Task Manager")
+           print("Goodbye")    
     else:
         print("All tasks:")
         for task in tasks:
@@ -198,7 +200,7 @@ while choice!=1 and choice !=2 and choice !=3:
             print(f"Priority: {task['priority']}")
             print(f"Status: {task['status']}")
             print("---------------------------------------")             
-   
+    
   
 
     
