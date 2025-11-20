@@ -122,9 +122,9 @@ print("2.View All Task")
 print("3. Exit")
 print("------------------------")
 print("")
-choice = input("Select an option: ")
+
 print("")
-print(f"You Selected:",choice)
+
 
 
 # -------------------------------------------
@@ -160,6 +160,18 @@ print(f"You Selected:",choice)
 # 5. Test it - the menu should repeat until you type "3"
 #
 # Write your code (modify your Task 3 code):
+choice=0
+while choice!=1 and choice !=2 and choice !=3:
+    print("Invalid entry!")
+    print("1.Add task")
+    print("2.view all tasks")
+    print("3.Exit")
+    choice =int(input("Select an option: "))
+    if 1>=choice>=3:
+       print("invalid entry!")
+
+    
+
 
 
 
