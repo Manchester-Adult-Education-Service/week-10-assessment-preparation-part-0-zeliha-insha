@@ -115,8 +115,16 @@ print("")
 # 5. Print what they chose: print(f"You selected: {choice}")
 #
 # Write your code below:
-
-
+print("Display Menu")
+print("------------------------")
+print("1. Add Task")
+print("2.View All Task")
+print("3. Exit")
+print("------------------------")
+print("")
+choice = input("Select an option: ")
+print("")
+print(f"You Selected:",choice)
 
 
 # -------------------------------------------
