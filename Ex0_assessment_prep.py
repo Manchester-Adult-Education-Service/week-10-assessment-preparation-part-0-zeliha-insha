@@ -169,7 +169,12 @@ while choice!=1 and choice !=2 and choice !=3:
     choice =int(input("Select an option: "))
     if 1>=choice>=3:
        print("invalid entry!Please enter an option between (1-3).")
-
+    if choice == 1:
+        task_name = input("Enter task name: ")
+        priority = input("Enter priority (High/Medium/Low): ")
+        print()
+        print("Task added successfully")
+        print()    
     
 
 
