@@ -181,13 +181,25 @@ while choice!=1 and choice !=2 and choice !=3:
         tasks.append(task)
         print(tasks)
         print("Task added successfully")
-        print()   
         while task_name == "":
             print("ERROR: Task name cannot be blank")
             task_name = input("Enter task name: ") 
         while priority == "":
-             print("ERROR: Priority cannot be blank")
-             priority = input("Enter priority (High/Medium/Low): ")
+            print("ERROR: Priority cannot be blank")
+            priority = input("Enter priority (High/Medium/Low): ")
+    elif choice == 2:
+        if len(tasks) == 0:
+            print("No tasks recorded yet")
+        
+    else:
+        print("All tasks:")
+        for task in tasks:
+            print(f"Name: {task['name']}")
+            print(f"Priority: {task['priority']}")
+            print(f"Status: {task['status']}")
+            print("---------------------------------------")             
+   
+  
 
     
 
