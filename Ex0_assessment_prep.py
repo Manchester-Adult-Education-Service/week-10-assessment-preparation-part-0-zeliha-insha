@@ -44,6 +44,8 @@
 #
 # Write your code below:
 
+tasks = []
+print(tasks)
 
 
 
@@ -72,7 +74,11 @@
 # 5. Print a blank line using print()
 #
 # Write your code below:
-
+print("=======================================")
+print("TASK MANAGER SYSTEM")
+print("Keep track of your daily tasks")
+print("==============================")
+print("")
 
 
 
@@ -109,7 +115,15 @@
 # 5. Print what they chose: print(f"You selected: {choice}")
 #
 # Write your code below:
+print("Display Menu")
+print("------------------------")
+print("1. Add Task")
+print("2.View All Task")
+print("3. Exit")
+print("------------------------")
+print("")
 
+print("")
 
 
 
@@ -146,6 +160,51 @@
 # 5. Test it - the menu should repeat until you type "3"
 #
 # Write your code (modify your Task 3 code):
+choice=0
+while choice!=1 and choice !=2 and choice !=3:
+    print("Invalid entry!")
+    print("1.Add task")
+    print("2.view all tasks")
+    print("3.Exit")
+    choice =int(input("Select an option: "))
+    if 1>=choice>=3:
+       print("invalid entry!Please enter an option between (1-3).")
+    if choice == 1:
+        task_name = input("Enter task name: ")
+        priority = input("Enter priority (High/Medium/Low): ")
+        print()
+        task = {
+        "name": task_name,
+       "priority": priority,
+        "status": "Not started"
+         }
+        tasks.append(task)
+        print(tasks)
+        print("Task added successfully")
+        while task_name == "":
+            print("ERROR: Task name cannot be blank")
+            task_name = input("Enter task name: ") 
+        while priority == "":
+            print("ERROR: Priority cannot be blank")
+            priority = input("Enter priority (High/Medium/Low): ")
+    elif choice == 2:
+        if len(tasks) == 0:
+            print("No tasks recorded yet")
+    elif choice == 3:
+           print("Thank you for using the Task Manager")
+           print("Goodbye")    
+    else:
+        print("All tasks:")
+        for task in tasks:
+            print(f"Name: {task['name']}")
+            print(f"Priority: {task['priority']}")
+            print(f"Status: {task['status']}")
+            print("---------------------------------------")             
+    
+  
+
+    
+
 
 
 
