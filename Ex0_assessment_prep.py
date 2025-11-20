@@ -173,6 +173,13 @@ while choice!=1 and choice !=2 and choice !=3:
         task_name = input("Enter task name: ")
         priority = input("Enter priority (High/Medium/Low): ")
         print()
+        task = {
+        "name": task_name,
+       "priority": priority,
+        "status": "Not started"
+         }
+        tasks.append(task)
+        print(tasks)
         print("Task added successfully")
         print()   
         while task_name == "":
