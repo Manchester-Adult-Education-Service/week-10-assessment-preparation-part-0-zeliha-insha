@@ -174,7 +174,14 @@ while choice!=1 and choice !=2 and choice !=3:
         priority = input("Enter priority (High/Medium/Low): ")
         print()
         print("Task added successfully")
-        print()    
+        print()   
+        while task_name == "":
+            print("ERROR: Task name cannot be blank")
+            task_name = input("Enter task name: ") 
+        while priority == "":
+             print("ERROR: Priority cannot be blank")
+             priority = input("Enter priority (High/Medium/Low): ")
+
     
 
 
